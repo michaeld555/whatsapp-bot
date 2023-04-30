@@ -98,6 +98,14 @@ wppconnect.create({
     // Aqui você pode colocar a lógica para enviar a mensagem para o número de telefone
   
   });
+
+  app.get('/', (req, res) => {
+    
+    res.status(200).json({
+        message: 'com sucesso',
+      });
+  
+  });
   
   app.listen(PORT, () => {
     console.log(`Servidor rodando na porta ${PORT}`);
