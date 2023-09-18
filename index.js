@@ -2,6 +2,10 @@ const wppconnect = require('@wppconnect-team/wppconnect');
 const express = require('express');
 const bodyParser = require('body-parser');
 
+const browser = await puppeteer.launch({
+  headless: "new"
+});
+
 const app = express();
 const PORT = process.env.PORT || 3000;
 let newClient = null;
